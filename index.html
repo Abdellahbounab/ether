@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(217, 54%, 11%);
+        text-align: center;
+        font-family: sans-serif;
+        color: white;
+      }
+      .card {
+        background-color: hsl(216, 50%, 16%);
+        width: 25vw;
+        height: fit-content;
+        margin-left: 35vw;
+        border-radius: 15px;
+        padding: 1.5vw;
+        text-align: left;
+        color:  hsl(215, 51%, 70%);
+        box-shadow: 100px 0px 250px 60px hsl(221, 59%, 11%);
+      }
+      h3{
+        color: white;
+      }
+      .attribution {
+        padding-top: 1vw;
+        font-size: 11px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      img {
+        height: 23vw;
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+      }
+      #avatar {
+        padding-top: 0.8vw;
+        padding-right: 1vw;
+        height: 2vw;
+        width: auto;
+        
+      }
+      .creator {
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+      }
+      .detail{
+        display: grid;
+	    align-content: center;
+	    grid-auto-flow: column;
+      }
+      #price{
+        text-align: left;
+        color:hsl(178, 100%, 50%);
+        font-family: 'Dancing Script', cursive;
+      }
+      .icon{
+        height: 1.5vw;
+        width: auto;
+      }
+      #date{
+        text-align: right;
+      }
+      #name{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="image-equilibrium.jpg" alt="NFT" />
+      <h3>Equilibrium #3429</h3>
+
+      <p class="descrip">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <span class="detail">
+      <p id="price"><img src="icon-ethereum.svg" alt="icon-ethereum" class="icon"> 0.041 ETH</p>
+      <p id="date"><img src="icon-clock.svg" alt="icon-clock" class="icon"> 3 days left</p>
+      </span>
+      <hr color=hsl(215, 32%, 27%) size=1em>
+      <span class="creator">
+        <img src="image-avatar.png" alt="image-avatar" id="avatar" />
+        <p class="descrip">Creation of <span id="name">Jules Wyvern</span></p>
+      </span>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Abdellahbounab"
+        >Abdellah Bounab</a
+      >.
+    </div>
+  </body>
+</html>
